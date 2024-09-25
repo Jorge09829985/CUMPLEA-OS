@@ -1,0 +1,125 @@
+body {
+    background: rgb(77, 19, 19);
+    background: radial-gradient(circle, rgb(208, 169, 229) 0%, rgba(59, 7, 131, 0.915) 100%); /* Color de fondo */
+    text-align:left; /* Centra el texto */
+    padding: 40px; /* Espaciado */
+}
+
+.contenedor{
+    display:contents;
+    align-items:left;
+    justify-content:left;
+    height: 150px;
+    left: 50px;
+}
+
+h1 {
+    color: #000000; /* Color del encabezado */
+    font-size: 70px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-family: 'Dancing Script';
+    text-transform:capitalize;
+    display:flex;
+    text-align: center;
+    margin: 0;
+}
+
+.contenedor2{
+    display: contents;
+    align-items: left;
+    justify-content: left;
+    height: 150px;
+    left: 50px;
+}
+h2 {
+    font-size: 25px; /* Tamaño de fuente para el párrafo */
+    color: #000000; /* Color del texto del párrafo */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.globo {
+    width: 150px; /* Ancho del globo */
+    height: 150px; /* Alto del globo */
+    background-color: #7e0909d3; /* Color del globo */
+    border-radius: 100px 100px 100px 100px; /* Forma del globo */
+    position: relative; /* Posicionamiento relativo */
+    margin: 0 auto; /* Centra el globo */
+    box-shadow: 0px 0px 60px 15px  rgb(109, 6, 6); /* Sombra del globo */
+    left: 30%;
+}
+
+.ojo {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top:50px;
+    border-radius: 20px 20px 20px 20px;
+    transform: rotate(-452deg);
+}
+
+.ojo.izquierdo{
+    left: 35px;
+}
+
+.ojo.derecho{
+    right: 35px; 
+}
+
+.sonrisa{
+    width: 60px;
+    height: 30px;
+    border-bottom: 15px solid rgb(0, 0, 0);
+    border-radius: 0 0 60px 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pupila {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%; /* Hace que la pupila sea un círculo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.cuerda {
+    width: 8px; /* Ancho de la cuerda */
+    height: 100px; /* Alto de la cuerda */
+    background-color: #000000; /* Color de la cuerda */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 50%; /* Centra la cuerda */
+    bottom: -100px; /* Posición inferior de la cuerda */
+    transform: translateX(-50%); /* Centra la cuerda horizontalmente */
+    box-shadow: 0px 0px 60px 15px rgb(109, 6, 6);
+    border-radius: 0px 0px 50px 50px; }
+
+    @media only screen and (max-width: 768px) {
+        .globo {
+            position:sticky; /* Cambia la posición para que no sea absoluta */
+            margin: 100px;  /* Ajusta el margen para que esté centrado */
+            left: 2px; /* Asegura que no quede fuera de la pantalla */
+            top: 2px; /* Ajusta la parte superior si es necesario */
+        }
+    
+        /* Ajusta el tamaño del globo para pantallas más pequeñas */
+        .globo {
+            width: 140px;
+            height: 140px;
+        }
+    
+        .contenedor2 {
+            padding-top: 5px; /* Añade espacio entre el globo y los mensajes */
+            text-align: center;
+        }
+}
